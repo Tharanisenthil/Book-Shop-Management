@@ -1,14 +1,11 @@
 package main;
-
 import java.util.Scanner;
-
 public class BookShop{
 	public static Item [] itemAvailable = new Item[50];	
 	public static void main(String args[]){
         for(int i=0;i<50;i++){
             itemAvailable[i] = new Item();
         }
-
         itemAvailable[0].addItem("To kill a mockingbird", 40);
         itemAvailable[1].addItem("My experiment with truth", 156);
         itemAvailable[2].addItem("when breath becomes air", 70);
@@ -26,9 +23,7 @@ public class BookShop{
         itemAvailable[14].addItem("Dove", 143);
         itemAvailable[15].addItem("Not Fade Away", 82);
         itemAvailable[16].addItem("Money Ball", 84);
-
-        
-        System.out.println("S.no" +"    "+"itemName"+"     "+ "MRP");
+         System.out.println("S.no" +"    "+"itemName"+"     "+ "MRP");
         for (int i=0;i<=16;i++){
             System.out.println((i+1)+"    "+itemAvailable[i].itemName+ "    "+itemAvailable[i].mrp + '\n') ;
         }
@@ -54,7 +49,5 @@ public class BookShop{
         c1.finalizeCart(cn.getName());
         System.out.println("-------------------------------------------------");
         // System.out.println("Checkout? Enter your Name:");
-
-
     }
 }
